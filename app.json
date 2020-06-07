@@ -1,0 +1,22 @@
+{
+  "name": "project_name",
+  "description": "Auctions WebApp",
+  "image": "heroku/python",
+  "repository": "https://github.com/MhamedBendenia/django-heroku-starter-kit",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "The secret key for the Django application.",
+      "generator": "secret"
+    }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python manage.py collectstatic --noinput",
+        "test": "python manage.py test"
+      }
+    }
+  }
+}

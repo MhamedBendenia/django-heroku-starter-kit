@@ -1,0 +1,5 @@
+django
+heroku
+node
+gunicorn
+django-heroku
